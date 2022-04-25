@@ -73,6 +73,11 @@ progress::-moz-progress-value {
   cursor: pointer;
 }
 
+.btn #cvLink {
+  text-decoration: none;
+  color: #fff;
+}
+
 .btn:hover {
   margin: -2px 3px;
   background: none;
