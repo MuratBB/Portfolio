@@ -12,7 +12,8 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -73,11 +74,6 @@ progress::-moz-progress-value {
   cursor: pointer;
 }
 
-.btn #cvLink {
-  text-decoration: none;
-  color: #fff;
-}
-
 .btn:hover {
   margin: -2px 3px;
   background: none;
@@ -103,7 +99,8 @@ progress::-moz-progress-value {
 .container {
   margin: 20px;
   padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .container .col {
@@ -136,21 +133,32 @@ progress::-moz-progress-value {
 }
 
 .container-header {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-image: linear-gradient(120deg, var(--yellow) 0%, var(--orangeDark) 100%);
   width: 100%;
   height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container-header #img {
   max-width: 150px;
   border-radius: 50%;
   margin: 10px 0;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
 }
 
 .container-header .container-namebox {
@@ -172,9 +180,31 @@ progress::-moz-progress-value {
 }
 
 .container-header .container-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 10px 0;
+}
+
+.container-project .row {
+  padding: 20px;
+  width: 100%;
+}
+
+.container-project .row b {
+  font-size: 30px;
+}
+
+.container-project .row p {
+  margin: 15px 0;
+}
+
+.container-project .row iframe {
+  width: 100%;
 }
 
 .container-skills ul {
@@ -184,7 +214,8 @@ progress::-moz-progress-value {
 .main-carousel {
   margin: 20px;
   padding: 15px 15px 10px 15px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .footer {
@@ -202,6 +233,7 @@ progress::-moz-progress-value {
 
 @media screen and (min-width: 1024px) {
   .tag {
+    -webkit-transition: 0.2s;
     transition: 0.2s;
   }
   .tag:hover {
@@ -214,8 +246,13 @@ progress::-moz-progress-value {
     margin: 25px 60px;
   }
   .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin: 40px 60px;
   }
   .container .col {
